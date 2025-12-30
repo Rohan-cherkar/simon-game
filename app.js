@@ -52,6 +52,10 @@ function check(idx){
             setTimeout(levUp,1000)
         }
     }else{
+        document.body.style.backgroundColor="red";
+        setTimeout(function (){
+            document.body.style.backgroundColor="white";
+        },150)
         h3.innerHTML=`Game Over !!! <u> Your score was ${level} </u> <br>Click anythinng to play again `
         // gameSeq=[];
         // started=false;
